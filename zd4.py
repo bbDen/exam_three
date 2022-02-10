@@ -19,10 +19,7 @@ full_list(b)
 
 
 def check_lists(list1, list2):
-    equal_list = []
-    for i in list1:
-        if i in list2:
-            equal_list.append(i)
+    equal_list = [list1[i] for i in range(len(a)) if list1[i] in list2]
 
     return equal_list
 
